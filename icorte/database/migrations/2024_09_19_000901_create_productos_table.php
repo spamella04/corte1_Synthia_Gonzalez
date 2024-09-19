@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('codigo') -> unique();
             $table->string('nombre');
             $table->text('descripcion');
-            $tabke->enum('categoria', ['calzado', 'ropa', 'joyeria']);
+            $table->enum('categoria', ['calzado', 'ropa', 'joyeria']);
             $table->float('precio');
             $table->integer('stock');
             $table->timestamps();
